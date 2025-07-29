@@ -1,7 +1,8 @@
 import java.util.Scanner;
 public class rhumbous {
     public static void main(String[] args) {
-        int n =5;
+        Scanner sc = new Scanner;
+        int n =sc.nextInt;
         for(int i=1;i<=n;i++){
             int spaces=n-i;
             for(int j=1;j<=spaces;j++){
