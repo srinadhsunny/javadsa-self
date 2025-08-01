@@ -1,3 +1,4 @@
+//in java memory alocations take place in stack format . main method is placed at first and the new methods will added respectively up on there creation and vanish with return ; by returining its output.
 import java.util.Scanner;
 public class methods {
     public static void printMyName(String name){
