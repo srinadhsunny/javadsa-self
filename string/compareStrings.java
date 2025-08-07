@@ -14,10 +14,8 @@ public class compareStrings {
         //-> -ve if s1<s2
         if(s1.compareTo(s2)==0){
             System.out.println("Strings are equal");
-        }else if(s1.compareTo(s2)<0){
-            System.out.println(s1 + " length is greater ");
         }else{
-            System.out.println(s2 +"length is greater");
+            System.out.println("Strings are not equal");
         }
 
         
@@ -25,4 +23,5 @@ public class compareStrings {
     
 
     
+
 }
