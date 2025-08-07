@@ -11,6 +11,7 @@ public class stringproblem {
         for (String word : s){
             int length =word.length();
             if(length%2==0){
+                sum=0;
                 int left=0;
                 int right=length-1;
                 //System.out.println(word);
@@ -21,9 +22,10 @@ public class stringproblem {
                     left=left+1;
                     right=right-1;
                 }
-                //System.out.println(sum);
+                System.out.print(sum);
             }
             else if (length%2!=0) {
+                 sum=0;
                 int add=values.indexOf(word.charAt(word.length()/2))+1;
                 int left=0;
                 int right=length-1;
@@ -36,10 +38,10 @@ public class stringproblem {
                     right=right-1; 
                 }
                 sum=sum+add;
+                System.out.print(sum);
                 //System.out.println(sum);
             }
         }
-        System.out.println(sum);
+        //System.out.println(sum);
     }
 }
-
