@@ -1,3 +1,4 @@
+//non parametrized
 class student{
     String name;
     int age;
@@ -20,4 +21,5 @@ public class constructor {
         s1.age=20;
         s1.printinfo();
     }
+
 }
