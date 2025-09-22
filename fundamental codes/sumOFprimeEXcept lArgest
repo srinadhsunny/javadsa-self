@@ -1,0 +1,31 @@
+public class sorting{
+    
+    public static void main(String[] args){
+        int input1[]={10,41,18,50,43,31,29,25,59,96,67};
+        int len=input1.length;
+        int sum=0;
+        int max=Integer.MIN_VALUE;
+        for(int i=0;i<len;i++){
+            if(isPrime(input1[i])&&input1[i]>max){
+                sum+=input1[i];
+                max=input1[i];
+            }else if(isPrime(input1[i])){
+                sum+=input1[i];
+            }
+        }
+        System.out.println(sum-max);
+    
+    }
+    public static boolean isPrime(int n){
+        if(n<=1){
+            return false;
+        }
+        for( int i=2;i<n;i++){
+            if(n%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
+    
+}
