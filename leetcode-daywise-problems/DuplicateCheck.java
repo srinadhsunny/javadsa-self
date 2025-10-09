@@ -6,7 +6,7 @@ class Solution {
         for (int num : nums) {
             // If num already exists in the set, it's a duplicate
             if (seen.contains(num)) return true;
-            seen.add(num);
+            seen.add(num); 
         }
         return false; // no duplicates found
     }
